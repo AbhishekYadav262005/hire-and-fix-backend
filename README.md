@@ -1,78 +1,101 @@
-🚀 HireNFix Backend
+# 🚀 HireNFix Backend
 
-🌟 About HireNFix
-HireNFix is a scalable and secure Node.js backend for a modern worker booking platform.
-It enables users to discover skilled workers nearby, request bookings, and manage profiles seamlessly — while giving workers a platform to showcase skills, set rates, and accept jobs.
+A comprehensive **worker booking platform backend** built for scalability, security, and seamless user experience.
 
-The backend handles:
-Authentication & Authorization with JWT
-Email OTP verification for security
-Worker search using skills & geolocation
-Booking request management with notifications
-QR code generation for user verification
-HireNFix is designed with best practices for security, scalability, and maintainability, making it both developer-friendly and production-ready.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSONwebtokens)
+![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io)
+![Render](https://img.shields.io/badge/Deploy-Render-FF6C37?style=for-the-badge)
 
 
-✨ Features-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔑 Authentication & User Management :
-✅ Signup/Login with email & password
-✅ Email verification via OTP
-✅ JWT-based auth with refresh tokens
-✅ Password reset flow via email
-✅ Role-based access (user & worker)
+## 📚 Overview
 
-🛠 Worker & Booking Management
-🔹 Workers can set skills, daily rates, and availability
-🔹 Users can search workers by skills & location
-🔹 Users can request bookings
-🔹 Workers can accept or reject bookings
-🔹 Notifications for booking requests and updates
+HireNFix is a modern backend for a worker booking platform, designed to **connect users with skilled workers nearby**.  
 
-📸 QR Code & Cloudinary Integration
-Each user has a QR code generated at signup
-QR uploaded to Cloudinary and linked to user profile
-Used for verification or attendance
+It allows users to:  
+- Search workers by skills and location  
+- Request bookings and manage their profiles  
+- View QR codes for verification or attendance  
 
-🔔 Notifications
-Stored in MongoDB
-Booking request, acceptance, rejection, profile updates
+Workers can:  
+- Set their skills, daily rates, and availability  
+- Accept or reject booking requests  
+- Receive notifications for bookings and profile updates  
 
-🔒 Security & Validation
-Password hashing with bcrypt (salt rounds = 12)
-Input validation (email, password, date)
-JWT stored in secure HTTP-only cookies
-Role-based route protection
-CORS configuration for frontend
+The backend follows best practices for **security, scalability, and maintainability**, making it developer-friendly and production-ready.
 
-🛠 Tech Stack
-Layer	                              Technology
-Backend	                            Node.js, Express.js
-Database	                          MongoDB Atlas
-Auth & Security	                    JWT, bcrypt, OTP via Nodemailer
-Storage	                            Cloudinary
-Deployment	                        Render
-Dev Tools	                          Postman, Nodemon
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
+## ✨ Features
 
-📂 Project Structure
+### 🔑 Authentication & User Management
+- ✅ Signup/Login with email & password  
+- ✅ Email OTP verification  
+- ✅ JWT-based authentication with refresh token flow  
+- ✅ Password reset via email  
+- ✅ Role-based access control (user & worker)  
+
+### 🛠 Worker & Booking Management
+- Workers can set skills, daily rates, and availability  
+- Users can search workers by skills & geolocation  
+- Users can request bookings  
+- Workers can accept/reject bookings  
+- Notifications for booking requests and updates  
+
+### 📸 QR Code & Cloudinary Integration
+- QR code generated for each user at signup  
+- Uploaded to Cloudinary and linked to user profile  
+- Used for verification and attendance tracking  
+
+### 🔔 Notifications
+- Stored in MongoDB  
+- Includes booking requests, acceptance/rejection, and profile updates  
+
+### 🔒 Security & Validation
+- Password hashing with bcrypt (salt rounds = 12)  
+- Input validation for email, password, and dates  
+- JWT stored in secure HTTP-only cookies  
+- Role-based route protection  
+- CORS configured for frontend  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+## 🛠 Tech Stack
+
+| Layer           | Technology                             |
+|-----------------|----------------------------------------|
+| Backend         | Node.js, Express.js                    |
+| Database        | MongoDB Atlas                          |
+| Authentication  | JWT, bcrypt, Email OTP via Nodemailer  |
+| Storage         | Cloudinary                             |
+| Deployment      | Render                                 |
+| Dev Tools       | Postman, Nodemon                       |
+
+---
+
+## 📋 Project Structure
 
 hire-and-fix-backend/
-├── app.js                  # Entry point
-├── controllers/            # API handlers
-├── middlewares/            # Auth, roles, profile check
-├── models/                 # MongoDB schemas
-├── routes/                 # Express routers
-├── utils/                  # JWT, OTP, QR code, email utils
+├── app.js # Entry point
+├── controllers/ # API handlers
+├── middlewares/ # Auth, roles, profile check
+├── models/ # MongoDB schemas
+├── routes/ # Express routers
+├── utils/ # JWT, OTP, QR code, email utils
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
 └── README.md
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
-⚙️ Environment Variables
+## ⚙️ Environment Variables
 
-Set these in .env or Render dashboard:
+Set these in `.env`:
 
 ATLAS_DBURL=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret
@@ -86,32 +109,82 @@ EMAIL_PORT=587
 FRONT_END_URL=*
 NODE_ENV=production
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
-📦 Setup 
+## 🔧 Installation & Setup
 
+```bash
+# Clone the repository
 git clone https://github.com/AbhishekYadav262005/hire-and-fix-backend.git
 cd hire-and-fix-backend
+
+# Install dependencies
 npm install
+
+# Run the backend server
 npm run dev       # Or: node app.js
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
-🔐 Security Highlights
+## 💻 Usage
 
-Passwords hashed using bcrypt
-Email OTP verification for signup
-JWT tokens stored securely in HTTP-only cookies
-Role-based route protection
+1. **Register** as a **user** or **worker**  
+2. **Log in** with your credentials  
 
+**For Users:**  
+- Search for workers  
+- Request bookings  
+- Pay to complete the booking  
 
-🎯 Future Improvements
+**For Workers:**  
+- Set skills, daily rate, and availability  
+- Accept or reject booking requests  
+- Track notifications  
 
-Persistent OTP storage in DB
-WebSocket notifications
-Refresh token flow fully implemented
-Automated testing & CI/CD
+---
 
-📧 Contact
+## 🧪 Testing
 
-Author: Abhishek Yadav
-Email: abhishek.yourgmail@gmail.com
+- Manual testing is recommended using **Postman** or any similar REST client  
+- Make sure all required `.env` variables are set before testing  
+- Test endpoints for:
+  - Authentication (signup, login, email verification, password reset)  
+  - Worker search by skills and geolocation  
+  - Booking requests and acceptance/rejection  
+  - Notifications and QR code functionality  
+
+---
+
+## 🤝 Contributing
+
+1. **Fork** the repository  
+2. Create a **feature branch**:  
+
+```bash
+git checkout -b feature/amazing-feature
+
+3.Commit your changes:
+
+```bash
+git commit -m "Add some amazing feature"
+
+4.Push to your branch:
+
+```bash
+git push origin feature/amazing-feature
+
+5.Open a Pull Request to the main repository
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+👨‍💻 Author
+Abhishek Yadav
+
 GitHub: AbhishekYadav262005
+LinkedIn:abhishekyadav262005ab
+Email: abhishek.yourgmail@gmail.com
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                        Built with ❤️ for scalable and secure backend solutions
+
