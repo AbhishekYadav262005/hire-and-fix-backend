@@ -2,12 +2,14 @@
 
 A comprehensive **worker booking platform backend** built for scalability, security, and seamless user experience.
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSONwebtokens)
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io)
-![Render](https://img.shields.io/badge/Deploy-Render-FF6C37?style=for-the-badge)
+<div style="text-align: center;">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express" alt="Express.js" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSONwebtokens" alt="JWT" />
+  <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io" alt="Socket.io" />
+  <img src="https://img.shields.io/badge/Render-FF6C37?style=for-the-badge" alt="Render" />
+</div>
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
