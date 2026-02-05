@@ -77,24 +77,27 @@ The backend follows best practices for **security, scalability, and maintainabil
 
 ---
 
-## 📋 Project Structure
+## 📁 Project Structure
 
+```
 hire-and-fix-backend/
-├── app.js # Entry point
-├── controllers/ # API handlers
-├── middlewares/ # Auth, roles, profile check
-├── models/ # MongoDB schemas
-├── routes/ # Express routers
-├── utils/ # JWT, OTP, QR code, email utils
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+│── app.js            # Entry point
+│── controllers/      # API handlers
+│── middlewares/      # Auth, roles
+│── models/           # MongoDB schemas
+│── routes/           # Express routers
+│── utils/            # JWT, OTP, QR code, email utils
+│── profile check/
+│── package.json
+│── package-lock.json
+│── .gitignore
+│── README.md
+```
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Environment Variables
-
+```
 Set these in `.env`:
 
 ATLAS_DBURL=your_mongodb_atlas_connection_string
@@ -108,8 +111,8 @@ EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 FRONT_END_URL=*
 NODE_ENV=production
+```
 
--------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🔧 Installation & Setup
 
@@ -124,7 +127,7 @@ npm install
 # Run the backend server
 npm run dev       # Or: node app.js
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## 💻 Usage
 
@@ -175,7 +178,7 @@ git push origin feature/amazing-feature
 
 5.Open a Pull Request to the main repository
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 👨‍💻 Author
 Abhishek Yadav
@@ -184,7 +187,7 @@ GitHub: AbhishekYadav262005
 LinkedIn:abhishekyadav262005ab
 Email: abhishek.yourgmail@gmail.com
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
-                                        Built with ❤️ for scalable and secure backend solutions
+                        Built with ❤️ for scalable and secure backend solutions
 
